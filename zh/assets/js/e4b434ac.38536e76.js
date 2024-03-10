@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkadvancedfmk_wiki=self.webpackChunkadvancedfmk_wiki||[]).push([[2127],{5492:a=>{a.exports=JSON.parse('{"label":"docusaurus","permalink":"/advancedfmk.github.io/zh/blog/tags/docusaurus","allTagsPath":"/advancedfmk.github.io/zh/blog/tags","count":4,"unlisted":false}')}}]);
