@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Aadvanced Framework wiki',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'The official wiki for Advanced Framework',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -20,8 +20,9 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'primogemstudio', // Usually your GitHub org/user name.
+  projectName: 'advancedfmk.github.io', // Usually your repo name.
+  deploymentBranch: 'gh-pages', 
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
