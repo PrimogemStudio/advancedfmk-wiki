@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Advanced Framework wiki',
-  tagline: 'The official wiki for Advanced Framework',
+  tagline: 'A modular framework for Minecraft',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -44,15 +44,15 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          /*editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',*/
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          /*editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',*/
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -79,7 +79,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          /*{to: '/blog', label: 'Blog', position: 'left'},*/
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -88,7 +88,6 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
         links: [
           {
             title: 'Docs',
@@ -116,19 +115,15 @@ const config = {
               },
             ],
           },
-          {
+          /*{
             title: 'More',
             items: [
               {
                 label: 'Blog',
                 to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/PrimogemStudio/Advanced-Framework',
-              },
+              }
             ],
-          },
+          },*/
         ],
         copyright: `Copyright © ${new Date().getFullYear()} PrimogemStudio, Inc. Built with Docusaurus.`,
       },
