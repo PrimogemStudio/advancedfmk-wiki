@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Aadvanced Framework wiki',
+  title: 'Advanced Framework wiki',
   tagline: 'The official wiki for Advanced Framework',
   favicon: 'img/favicon.ico',
 
@@ -67,7 +67,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Advanced Framework',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -103,16 +103,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Github',
+                href: 'https://github.com/PrimogemStudio/Advanced-Framework',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Modrinth',
+                href: 'https://modrinth.com/mod/advanced-framework',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'MCMOD',
+                href: 'https://www.mcmod.cn/class/13935.html',
               },
             ],
           },
@@ -125,12 +125,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/PrimogemStudio/Advanced-Framework',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} PrimogemStudio, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
