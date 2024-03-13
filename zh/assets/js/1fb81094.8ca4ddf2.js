@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkadvancedfmk_wiki=self.webpackChunkadvancedfmk_wiki||[]).push([[1848],{667:a=>{a.exports=JSON.parse('{"permalink":"/advancedfmk.github.io/zh/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkadvancedfmk_wiki=self.webpackChunkadvancedfmk_wiki||[]).push([[2455],{9688:e=>{e.exports=JSON.parse('{"permalink":"/advancedfmk-wiki/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
