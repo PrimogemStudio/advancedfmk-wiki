@@ -16,12 +16,12 @@ const config = {
   url: 'https://primogemstudio.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/advancedfmk.github.io/',
+  baseUrl: '/advancedfmk-wiki/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'primogemstudio', // Usually your GitHub org/user name.
-  projectName: 'advancedfmk.github.io', // Usually your repo name.
+  projectName: 'advancedfmk-wiki', // Usually your repo name.
   deploymentBranch: 'gh-pages', 
 
   onBrokenLinks: 'throw',
