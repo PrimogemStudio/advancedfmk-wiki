@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Advanced Framework wiki',
-  tagline: 'A modular framework for Minecraft',
+  title: 'Advanced Framework',
+  tagline: 'Minecraft 的模块化框架',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -31,8 +31,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'zh'],
+    defaultLocale: 'zh',
+    locales: ['zh', 'en'],
   },
 
   presets: [
@@ -77,7 +77,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: '主文档',
           },
           /*{to: '/blog', label: 'Blog', position: 'left'},*/
           {
@@ -96,13 +96,13 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: '主文档',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: '其他链接',
             items: [
               {
                 label: 'Github',
@@ -113,7 +113,7 @@ const config = {
                 href: 'https://modrinth.com/mod/advanced-framework',
               },
               {
-                label: 'MCMOD',
+                label: 'MC 百科',
                 href: 'https://www.mcmod.cn/class/13935.html',
               },
             ],

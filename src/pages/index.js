@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--lg"
             to="/docs/intro">
-            Get started with Advanced Framework
+            开始使用 Advanced Framework
           </Link>
         </div>
       </div>
