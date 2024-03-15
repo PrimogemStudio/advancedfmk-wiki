@@ -6,6 +6,7 @@ import SilverWolfTop from '@site/static/img/silver-wolf.png';
 import TrailblazerTop from '@site/static/img/trailblazer.png';
 import HertaTop from '@site/static/img/herta.png';
 import Link from '@docusaurus/Link';
+import Translate, {translate} from '@docusaurus/Translate';
 
 const FeatureList = [
   {
@@ -33,9 +34,18 @@ const FeatureList = [
     Svg: HertaTop,
     textline: '渲染器更新了, 快来测', 
     description: (
-      <>
-        MMD 渲染器的实现已从 <Link href='https://github.com/PrimogemStudio/mmdbase'>mmdbase</Link> 迁移到 <Link href='https://github.com/PrimogemStudio/saba-native'>saba-native</Link>, 没有使用KAIMyEntity的实现, 由于没有直接操作 OpenGL 缓存提交数据, 增强了对 Iris 的兼容性。但目前仍然会引起性能和渲染问题
-      </>
+      <Translate
+          id="home.features.mmdrenderer.desc"
+          values={{
+            mmdbase_link: (
+              <Link href='https://github.com/PrimogemStudio/mmdbase'>mmdbase</Link>
+            ), 
+            saba_native_link: (
+              <Link href='https://github.com/PrimogemStudio/saba-native'>saba-native</Link>
+            )
+          }}>
+          {'MMD 渲染器的实现已从 {mmdbase_link} 迁移到 {saba_native_link}, 没有使用KAIMyEntity的实现, 由于没有直接操作 OpenGL 缓存提交数据, 增强了对 Iris 的兼容性。但目前仍然会引起性能和渲染问题'}
+        </Translate>
     ),
   },
 ];
