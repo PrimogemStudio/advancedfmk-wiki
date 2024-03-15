@@ -10,44 +10,32 @@ import Translate, {translate} from '@docusaurus/Translate';
 
 const FeatureList = [
   {
-    title: <Translate id="home.features.project.title">一个全新的项目</Translate>,
+    title: <Translate id="home.features.project.title"/>,
     Svg: SilverWolfTop,
-    textline: <Translate id="home.features.project.textline">笑死, 这里还有一个新项目</Translate>, 
-    description: (
-      <Translate id="home.features.project.desc">Advanced Framework 起始于 2023 年 12 月 7 日, 在 2024 年 1 月 7 日从 Advanced UI 更名 Advanced Framework, 主要灵感来自于在 2023 年 8 月 9 日停更的 Genshin UI</Translate>
-    ),
+    textline: <Translate id="home.features.project.textline"/>, 
+    description: (<Translate id="home.features.project.desc"/>),
   },
   {
-    title: <Translate id="home.features.modular.title">模块化</Translate>,
+    title: <Translate id="home.features.modular.title"/>,
     Svg: TrailblazerTop,
-    textline: <Translate id="home.features.modular.textline">模块, 就是用来打碎的</Translate>, 
-    description: (
-      <Translate id="home.features.modular.desc">为了分离带有本地库的 MMD 渲染器, 整个 Mod 被设计成多模块, 可以独立加载或嵌入到其他 Mod 的内部</Translate>
-    ),
+    textline: <Translate id="home.features.modular.textline"/>, 
+    description: (<Translate id="home.features.modular.desc"/>),
   },
   {
-    title: <Translate id="home.features.mmdrenderer.title">新 MMD 渲染器实现</Translate>,
+    title: <Translate id="home.features.mmdrenderer.title"/>,
     Svg: HertaTop,
-    textline: <Translate id="home.features.mmdrenderer.textline">渲染器更新了, 快来测</Translate>, 
+    textline: <Translate id="home.features.mmdrenderer.textline"/>, 
     description: (
       <Translate
           id="home.features.mmdrenderer.desc"
           values={{
             mmdbase_link: (
-              <Link href='https://github.com/PrimogemStudio/mmdbase'>
-                <Translate id="home.features.mmdrenderer.mmdbase">
-                {'mmdbase (基于 JVM)'}
-              </Translate></Link>
+              <Link href='https://github.com/PrimogemStudio/mmdbase'><Translate id="home.features.mmdrenderer.mmdbase"/></Link>
             ), 
             saba_native_link: (
-              <Link href='https://github.com/PrimogemStudio/saba-native'>
-                <Translate id="home.features.mmdrenderer.saba_native">
-              {'saba-native (基于 C++)'}
-            </Translate></Link>
+              <Link href='https://github.com/PrimogemStudio/saba-native'><Translate id="home.features.mmdrenderer.saba_native"/></Link>
             )
-          }}>
-          {'MMD 渲染器的实现已从 {mmdbase_link} 迁移到 {saba_native_link}, 没有使用KAIMyEntity的实现, 由于没有直接操作 OpenGL 缓存提交数据, 增强了对 Iris 的兼容性。但目前仍然会引起性能和渲染问题'}
-        </Translate>
+          }}/>
     ),
   },
 ];

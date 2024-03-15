@@ -18,18 +18,14 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">
           <Translate
-          id="home.tagline">
-          {siteConfig.tagline}
-        </Translate>
+          id="home.tagline"/>
         </p>
         <div className={styles.buttons}>
           <Link
             className="button button--lg"
             to="/docs/intro">
               <Translate
-          id="home.startButton">
-          {'开始使用 Advanced Framework'}
-        </Translate>
+          id="home.startButton"/>
           </Link>
         </div>
       </div>

@@ -9,33 +9,33 @@
     "message": "A new project"
   }, 
   "home.features.project.textline": {
-    "message": "笑死, 这里还有一个新项目."
+    "message": "Ha, there's even a new project over here."
   }, 
   "home.features.project.desc": {
-    "message": "Advanced Framework 起始于 2023 年 12 月 7 日, 在 2024 年 1 月 7 日从 Advanced UI 更名 Advanced Framework, 主要灵感来自于在 2023 年 8 月 9 日停更的 Genshin UI."
+    "message": "The Advanced Framework started on December 7, 2023, and was renamed from Advanced UI to Advanced Framework on January 7, 2024. The main inspiration comes from Genshin UI, which stopped updating on August 9, 2023."
   }, 
   "home.features.modular.title": {
     "message": "Modular"
   }, 
   "home.features.modular.textline": {
-    "message": "模块, 就是用来打碎的."
+    "message": "Modules are made to be broken!"
   }, 
   "home.features.modular.desc": {
-    "message": "为了分离带有本地库的 MMD 渲染器, 整个 Mod 被设计成多模块, 可以独立加载或嵌入到其他 Mod 的内部."
+    "message": "In order to separate the MMD renderer with the native library, the entire Mod is designed as multiple modules that can be independently loaded or embedded into the internal of other Mods."
   }, 
   "home.features.mmdrenderer.title": {
     "message": "New MMD renderer implementation"
   }, 
   "home.features.mmdrenderer.textline": {
-    "message": "渲染器更新了, 快来测."
+    "message": "Renderer upgrade is done, Come test"
   }, 
   "home.features.mmdrenderer.mmdbase": {
-    "message": "mmdbase (based on JVM)"
+    "message": "mmdbase(based on JVM)"
   },
   "home.features.mmdrenderer.saba_native": {
-    "message": "saba-native (based on C++)"
+    "message": "saba-native(based on C++)"
   },
   "home.features.mmdrenderer.desc": {
-    "message": "MMD 渲染器的实现已从 {mmdbase_link} 迁移到 {saba_native_link}, 没有使用KAIMyEntity的实现, 由于没有直接操作 OpenGL 缓存提交数据, 增强了对 Iris 的兼容性。但目前仍然会引起性能和渲染问题."
+    "message": "The implementation of the MMD renderer has been migrated from {mmdbase_link} to {saba_native_link}, without using the KAIMyEntity's code. As there is no direct manipulation of OpenGL cache to submit data, it enhances compatibility with Iris. However, it still causes performance and rendering issues."
   }
 }
