@@ -81,11 +81,6 @@ const config = {
           },
           /*{to: '/blog', label: 'Blog', position: 'left'},*/
           {
-            href: 'https://github.com/PrimogemStudio/Advanced-Framework',
-            label: 'GitHub',
-            position: 'right',
-          },
-          {
             type: 'localeDropdown',
           }
         ],
