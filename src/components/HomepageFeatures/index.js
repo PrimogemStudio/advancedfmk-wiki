@@ -2,37 +2,39 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
+import SilverWolfTop from '@site/static/img/silver-wolf.png';
+import TrailblazerTop from '@site/static/img/trailblazer.png';
+import HertaTop from '@site/static/img/herta.png';
+import Link from '@docusaurus/Link';
+
 const FeatureList = [
   {
     title: '一个全新的项目',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    textline: 'test', 
+    Svg: SilverWolfTop,
+    textline: '笑死, 这里还有一个新项目', 
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Advanced Framework 起始于 2023 年 12 月 7 日, 在 2024 年 1 月 7 日从 Advanced UI 更名 Advanced Framework, 主要灵感来自于在 2023 年 8 月 9 日停更的 Genshin UI
       </>
     ),
   },
   {
     title: '模块化',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    textline: 'test', 
+    Svg: TrailblazerTop,
+    textline: '模块, 就是用来打碎的', 
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        为了分离带有本地库的 MMD 渲染器, 整个 mod 被设计成多模块, 可以独立加载或嵌入到其他 mod 的内部
       </>
     ),
   },
   {
     title: '新 MMD 渲染器实现',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    textline: 'test', 
+    Svg: HertaTop,
+    textline: '渲染器更新了, 快来测', 
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        MMD 渲染器的实现已从 <Link href='https://github.com/PrimogemStudio/mmdbase'>mmdbase</Link> 迁移到 <Link href='https://github.com/PrimogemStudio/saba-native'>saba-native</Link>, 没有使用KAIMyEntity的实现, 由于没有直接操作 OpenGL 缓存提交数据, 增强了对 Iris 的兼容性。但目前仍然会引起性能和渲染问题
       </>
     ),
   },
@@ -42,7 +44,7 @@ function Feature({Svg, title, textline, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={Svg} className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h4" style={{color: 'grey', fontStyle: 'italic'}}>{textline}</Heading>
