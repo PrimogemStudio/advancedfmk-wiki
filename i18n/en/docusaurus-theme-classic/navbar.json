@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Advanced Framework",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "My Site Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.主文档": {
+    "message": "Main Doc",
+    "description": "Navbar item with label 主文档"
+  }
+}

@@ -42,17 +42,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          /*editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',*/
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          /*editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',*/
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -88,7 +80,7 @@ const config = {
       footer: {
         links: [
           {
-            title: 'Docs',
+            title: '所有文档',
             items: [
               {
                 label: '主文档',
@@ -97,7 +89,7 @@ const config = {
             ],
           },
           {
-            title: '其他链接',
+            title: '链接',
             items: [
               {
                 label: 'Github',
@@ -123,7 +115,7 @@ const config = {
             ],
           },*/
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} PrimogemStudio, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} PrimogemStudio, Inc. 使用 Docusaurus 构建`,
       },
       prism: {
         theme: prismThemes.github,
