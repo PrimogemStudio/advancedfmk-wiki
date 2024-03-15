@@ -10,29 +10,25 @@ import Translate, {translate} from '@docusaurus/Translate';
 
 const FeatureList = [
   {
-    title: '一个全新的项目',
+    title: <Translate id="home.features.project.title">一个全新的项目</Translate>,
     Svg: SilverWolfTop,
-    textline: '笑死, 这里还有一个新项目', 
+    textline: <Translate id="home.features.project.textline">笑死, 这里还有一个新项目</Translate>, 
     description: (
-      <>
-        Advanced Framework 起始于 2023 年 12 月 7 日, 在 2024 年 1 月 7 日从 Advanced UI 更名 Advanced Framework, 主要灵感来自于在 2023 年 8 月 9 日停更的 Genshin UI
-      </>
+      <Translate id="home.features.project.desc">Advanced Framework 起始于 2023 年 12 月 7 日, 在 2024 年 1 月 7 日从 Advanced UI 更名 Advanced Framework, 主要灵感来自于在 2023 年 8 月 9 日停更的 Genshin UI</Translate>
     ),
   },
   {
-    title: '模块化',
+    title: <Translate id="home.features.modular.title">模块化</Translate>,
     Svg: TrailblazerTop,
-    textline: '模块, 就是用来打碎的', 
+    textline: <Translate id="home.features.modular.textline">模块, 就是用来打碎的</Translate>, 
     description: (
-      <>
-        为了分离带有本地库的 MMD 渲染器, 整个 mod 被设计成多模块, 可以独立加载或嵌入到其他 mod 的内部
-      </>
+      <Translate id="home.features.modular.desc">为了分离带有本地库的 MMD 渲染器, 整个 Mod 被设计成多模块, 可以独立加载或嵌入到其他 Mod 的内部</Translate>
     ),
   },
   {
-    title: '新 MMD 渲染器实现',
+    title: <Translate id="home.features.mmdrenderer.title">新 MMD 渲染器实现</Translate>,
     Svg: HertaTop,
-    textline: '渲染器更新了, 快来测', 
+    textline: <Translate id="home.features.mmdrenderer.textline">渲染器更新了, 快来测</Translate>, 
     description: (
       <Translate
           id="home.features.mmdrenderer.desc"
