@@ -38,10 +38,16 @@ const FeatureList = [
           id="home.features.mmdrenderer.desc"
           values={{
             mmdbase_link: (
-              <Link href='https://github.com/PrimogemStudio/mmdbase'>mmdbase</Link>
+              <Link href='https://github.com/PrimogemStudio/mmdbase'>
+                <Translate id="home.features.mmdrenderer.mmdbase">
+                {'mmdbase (基于 JVM)'}
+              </Translate></Link>
             ), 
             saba_native_link: (
-              <Link href='https://github.com/PrimogemStudio/saba-native'>saba-native</Link>
+              <Link href='https://github.com/PrimogemStudio/saba-native'>
+                <Translate id="home.features.mmdrenderer.saba_native">
+              {'saba_native (基于 C++/llvm)'}
+            </Translate></Link>
             )
           }}>
           {'MMD 渲染器的实现已从 {mmdbase_link} 迁移到 {saba_native_link}, 没有使用KAIMyEntity的实现, 由于没有直接操作 OpenGL 缓存提交数据, 增强了对 Iris 的兼容性。但目前仍然会引起性能和渲染问题'}

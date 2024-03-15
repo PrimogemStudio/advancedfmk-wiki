@@ -5,6 +5,12 @@
     "home.tagline": {
         "message": "A modular framework for Minecraft"
     }, 
+    "home.features.mmdrenderer.mmdbase": {
+        "message": "mmdbase (based on JVM)"
+    }, 
+    "home.features.mmdrenderer.saba_native": {
+        "message": "saba_native (based on C++/llvm)"
+    }, 
     "home.features.mmdrenderer.desc": {
         "message": "MMD 渲染器的实现已从 {mmdbase_link} 迁移到 {saba_native_link}, 没有使用KAIMyEntity的实现, 由于没有直接操作 OpenGL 缓存提交数据, 增强了对 Iris 的兼容性。但目前仍然会引起性能和渲染问题"
     }
