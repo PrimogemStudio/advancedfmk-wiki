@@ -1,0 +1,8 @@
+{
+    "home.startButton": {
+        "message": "Get started with Advanced Framework"
+    }, 
+    "home.tagline": {
+        "message": "A modular framework for Minecraft"
+    }
+}
