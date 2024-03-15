@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://primogemstudio.github.io/advancedfmk-wiki/blog"/>
     <subtitle>Advanced Framework Blog</subtitle>
-    <icon>https://primogemstudio.github.io/advancedfmk-wiki/img/favicon.ico</icon>
+    <icon>https://primogemstudio.github.io/advancedfmk-wiki/img/icon.png</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://primogemstudio.github.io/advancedfmk-wiki/blog/welcome</id>
