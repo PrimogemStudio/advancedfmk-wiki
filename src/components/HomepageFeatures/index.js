@@ -42,7 +42,7 @@ const FeatureList = [
             saba_native_link: (
               <Link href='https://github.com/PrimogemStudio/saba-native'>
                 <Translate id="home.features.mmdrenderer.saba_native">
-              {'saba_native (基于 C++/llvm)'}
+              {'saba-native (基于 C++)'}
             </Translate></Link>
             )
           }}>
