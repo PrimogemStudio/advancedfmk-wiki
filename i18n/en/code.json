@@ -7,28 +7,28 @@
   },
   "home.features.project.title": {
     "message": "A new project"
-  }, 
+  },
   "home.features.project.textline": {
     "message": "Ha, there's even a new project over here."
-  }, 
+  },
   "home.features.project.desc": {
     "message": "The Advanced Framework started on December 7, 2023, and was renamed from Advanced UI to Advanced Framework on January 7, 2024. The main inspiration comes from Genshin UI, which stopped updating on August 9, 2023."
-  }, 
+  },
   "home.features.modular.title": {
     "message": "Modular"
-  }, 
+  },
   "home.features.modular.textline": {
     "message": "Modules are made to be broken!"
-  }, 
+  },
   "home.features.modular.desc": {
     "message": "In order to separate the MMD renderer with the native library, the entire Mod is designed as multiple modules that can be independently loaded or embedded into the internal of other Mods."
-  }, 
+  },
   "home.features.mmdrenderer.title": {
     "message": "New MMD renderer implementation"
-  }, 
+  },
   "home.features.mmdrenderer.textline": {
     "message": "Renderer upgrade is done, Come test"
-  }, 
+  },
   "home.features.mmdrenderer.mmdbase": {
     "message": "mmdbase(based on JVM)"
   },

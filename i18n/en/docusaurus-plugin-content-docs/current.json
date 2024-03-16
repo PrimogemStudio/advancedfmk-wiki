@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Advanced Framework - MMD 渲染器": {
+    "message": "Advanced Framework - MMD Renderer",
+    "description": "The label for category Advanced Framework - MMD 渲染器 in sidebar tutorialSidebar"
+  }
+}
