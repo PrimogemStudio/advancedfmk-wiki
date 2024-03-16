@@ -2,46 +2,31 @@
 sidebar_position: 1
 ---
 
-# 在你的项目中导入 Advanced Framework
+# 万物之始
 
 在你的 Fabric 项目中导入 **Advanced Framework**.
 
-## 配置 Gradle 脚本
+## 配置 Gradle 构建脚本
 
-Get started by **creating a new site**.
+由于 Advanced Framework 的所有子模块都已经上传 Maven 中央仓库, 所以无需额外配置仓库地址
+```groovy title="build.gradle"
+ext.advancedfmk_version = '0.3.4'
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+dependencies {
+  // ...
+  modImplementation 'io.primogemstudio.advancedfmk:advancedfmk-uicompositor:$advancedfmk_version'
+  modImplementation 'io.primogemstudio.advancedfmk:advancedfmk-mmdrenderer:$advancedfmk_version'
+  // ...
+}
+```
 
 ### 依赖需求
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- JDK 17
+- 在 Linux 上: 
+  - [advancedfmk-mmdrenderer (MMD 渲染器)](https://github.com/PrimogemStudio/Advanced-Framework/mmdrenderer) 模块需要 glibc 3.4.31 或以上版本 (Debian 系发行版可能不包含此 glibc 版本, 需要手动升级)
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+### 模块结构
+- [advancedfmk-uicompositor (UI 组合器)](https://github.com/PrimogemStudio/Advanced-Framework/uicompositor)
+- [advancedfmk-mmdrenderer (MMD 渲染器)](https://github.com/PrimogemStudio/Advanced-Framework/mmdrenderer)
+  - [advancedfmk-commonutils (工具包, 目前只包含 lwjgl-tinyfd 的封装函数)](https://github.com/PrimogemStudio/Advanced-Framework/commonutils)
