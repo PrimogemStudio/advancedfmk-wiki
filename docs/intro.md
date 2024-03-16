@@ -2,11 +2,11 @@
 sidebar_position: 1
 ---
 
-# Intro
+# 在你的项目中导入 Advanced Framework
 
-Let's discover **Docusaurus in less than 5 minutes**.
+在你的 Fabric 项目中导入 **Advanced Framework**.
 
-## Getting Started
+## 配置 Gradle 脚本
 
 Get started by **creating a new site**.
 
