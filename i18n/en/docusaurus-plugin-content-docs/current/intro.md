@@ -8,7 +8,7 @@ Import **Advanced Framework** in your Fabric project
 
 ## Configure Gradle build script
 
-由于 Advanced Framework 的所有子模块都已经上传 Maven 中央仓库, 所以无需额外配置仓库地址
+Since all the submodules of Advanced Framework have already been uploaded to the Maven Central repository, there is no need to configure additional repositories
 ```groovy title="build.gradle"
 ext.advancedfmk_version = '0.3.4'
 

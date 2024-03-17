@@ -8,7 +8,7 @@ sidebar_position: 1
 
 ## 配置 Gradle 构建脚本
 
-由于 Advanced Framework 的所有子模块都已经上传 Maven 中央仓库, 所以无需额外配置仓库地址
+由于 Advanced Framework 的所有子模块都已经上传 Maven 中央仓库, 所以无需额外配置仓库
 ```groovy title="build.gradle"
 ext.advancedfmk_version = '0.3.4'
 
