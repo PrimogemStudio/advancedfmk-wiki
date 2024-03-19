@@ -29,5 +29,5 @@ dependencies {
 ### 模块结构
 - [advancedfmk-uicompositor (UI 组合器)](https://github.com/PrimogemStudio/Advanced-Framework/uicompositor)
 - [advancedfmk-mmdrenderer (MMD 渲染器)](https://github.com/PrimogemStudio/Advanced-Framework/mmdrenderer)
-  - [advancedfmk-commonutils (工具包, 目前只包含 lwjgl-tinyfd 的封装函数)](https://github.com/PrimogemStudio/Advanced-Framework/commonutils)
+  - [advancedfmk-commonutils (工具包, 目前包含对 lwjgl 的封装)](https://github.com/PrimogemStudio/Advanced-Framework/commonutils)
   
