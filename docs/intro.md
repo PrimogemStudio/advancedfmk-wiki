@@ -27,7 +27,7 @@ dependencies {
   - [advancedfmk-mmdrenderer (MMD 渲染器)](https://github.com/PrimogemStudio/Advanced-Framework/mmdrenderer) 模块需要 glibc 3.4.31 或以上版本 (Debian 系发行版可能不包含此 glibc 版本, 需要手动升级)
 
 ### 模块结构
-- [advancedfmk-uicompositor (UI 组合器)](https://github.com/PrimogemStudio/Advanced-Framework/uicompositor)
-- [advancedfmk-mmdrenderer (MMD 渲染器)](https://github.com/PrimogemStudio/Advanced-Framework/mmdrenderer)
-  - [advancedfmk-commonutils (工具包, 目前包含对 lwjgl 的封装)](https://github.com/PrimogemStudio/Advanced-Framework/commonutils)
+- [advancedfmk-uicompositor (UI 组合器)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/uicompositor)
+- [advancedfmk-mmdrenderer (MMD 渲染器)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/mmdrenderer)
+  - [advancedfmk-commonutils (工具包, 包含对 lwjgl 的封装)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/commonutils)
   
