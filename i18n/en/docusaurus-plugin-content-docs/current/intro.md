@@ -24,9 +24,9 @@ dependencies {
 
 - JDK 17
 - On Linux :
-  - [advancedfmk-mmdrenderer (MMD Renderer)](https://github.com/PrimogemStudio/Advanced-Framework/mmdrenderer) modules need glibc 3.4.31 or above (Debian  distributions may not contains this version of glibc, needs manual upgrade)
+  - [advancedfmk-mmdrenderer (MMD Renderer)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/mmdrenderer) modules need glibc 3.4.31 or above (Debian  distributions may not contains this version of glibc, needs manual upgrade)
 
 ### Module structure
-- [advancedfmk-uicompositor (UI Compositor)](https://github.com/PrimogemStudio/Advanced-Framework/uicompositor)
-- [advancedfmk-mmdrenderer (MMD Renderer)](https://github.com/PrimogemStudio/Advanced-Framework/mmdrenderer)
-  - [advancedfmk-commonutils (Utilities, currently contains lwjgl-tinyfd wrapping functions)](https://github.com/PrimogemStudio/Advanced-Framework/commonutils)
+- [advancedfmk-uicompositor (UI Compositor)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/uicompositor)
+- [advancedfmk-mmdrenderer (MMD Renderer)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/mmdrenderer)
+  - [advancedfmk-commonutils (Utilities, currently contains lwjgl-tinyfd wrapping functions)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/commonutils)
