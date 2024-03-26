@@ -4,4 +4,5 @@
 - void PMXModel.render(ByteBuffer buff, ByteBuffer constants);
 ### PMXModel.Animation
 - void Animation.add(File file); (来自于 ArrayList\<T\> 的函数)
+- void Animation.remove(File file); (来自于 ArrayList\<T\> 的函数)
 - void Animation.setupAnimation();
