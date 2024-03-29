@@ -23,6 +23,9 @@
     "message": "MCMod",
     "description": "The label of footer link with label=MC 百科 linking to https://www.mcmod.cn/class/13935.html"
   },
+  "link.item.label.Wiki 仓库": {
+    "message": "Wiki repository"
+  }, 
   "copyright": {
     "message": "Copyright © 2024 PrimogemStudio, Inc. Built with Docusaurus.",
     "description": "The footer copyright"

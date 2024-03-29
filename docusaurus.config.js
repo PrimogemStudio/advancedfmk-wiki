@@ -96,6 +96,10 @@ const config = {
                 href: 'https://github.com/PrimogemStudio/Advanced-Framework',
               },
               {
+                label: 'Wiki 仓库', 
+                href: 'https://github.com/PrimogemStudio/advancedfmk-wiki'
+              }, 
+              {
                 label: 'Modrinth',
                 href: 'https://modrinth.com/mod/advanced-framework',
               },
@@ -118,8 +122,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} PrimogemStudio, Inc. 使用 Docusaurus 构建`,
       },
       prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+        theme: prismThemes.vsLight,
+        darkTheme: prismThemes.vsDark,
       },
     }),
 };
