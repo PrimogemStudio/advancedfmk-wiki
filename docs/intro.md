@@ -10,7 +10,7 @@ sidebar_position: 1
 
 由于 Advanced Framework 的所有子模块都已经上传 Maven 中央仓库, 所以无需额外配置仓库
 ```groovy title="build.gradle"
-ext.advancedfmk_version = '0.3.6'
+ext.advancedfmk_version = '0.4.0'
 
 dependencies {
   // ...
