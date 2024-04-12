@@ -6,5 +6,8 @@
   "sidebar.tutorialSidebar.category.Advanced Framework - MMD 渲染器": {
     "message": "Advanced Framework - MMD Renderer",
     "description": "The label for category Advanced Framework - MMD 渲染器 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Advanced Framework - 字体引擎": {
+    "message": "Advanced Framework - Font engine"
   }
 }

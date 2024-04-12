@@ -18,7 +18,7 @@
     "message": "模块化"
   },
   "home.features.modular.textline": {
-    "message": "模块, 就是用来打碎的"
+    "message": "模块, 就是用来打碎的！"
   },
   "home.features.modular.desc": {
     "message": "为了分离带有原生库的 MMD 渲染器, 整个 Mod 被设计成多模块, 可以独立加载或嵌入到其他 Mod 的内部"
