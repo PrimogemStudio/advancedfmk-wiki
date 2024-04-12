@@ -30,3 +30,4 @@ dependencies {
 - [advancedfmk-uicompositor (UI Compositor)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/uicompositor)
 - [advancedfmk-mmdrenderer (MMD Renderer)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/mmdrenderer)
   - [advancedfmk-commonutils (Utilities, currently contains lwjgl-tinyfd wrapping functions)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/commonutils)
+- [advancedfmk-fontengine (Font parser & renderer, early access)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/fontengine)
