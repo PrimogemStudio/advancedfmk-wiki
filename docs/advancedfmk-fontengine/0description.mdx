@@ -1,0 +1,67 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Link from '@docusaurus/Link';
+import Translate, {translate} from '@docusaurus/Translate';
+
+# 矢量字体处理
+:::info
+
+字体解析部分使用 lwjgl-freetype 完成<br/>
+不需要额外依赖，Advanced Framework 已将 lwjgl-freetype 静态依赖<br/>
+该静态依赖将在 Minecraft 1.21.x 取消<br/>
+
+:::
+[代码实现](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/fontengine/src/main/java/com/primogemstudio/advancedfmk/ftwrap)
+## 从 ```ttf``` 字体到 ```vtxf```
+
+<Tabs>
+  <TabItem value="step1" label="解析字体" default>
+    - 初始化 FreeType 库
+    - 从文件或内存加载 ttf 字体
+    - 将字体指针存储
+  </TabItem>
+  <TabItem value="step2" label="获取 SVG 路径">
+    - 通过 ```FT_Decompose_Outline()``` 函数提取字符轮廓
+    - 将每一个 SVG 组成部分放入队列中
+  </TabItem>
+  <TabItem value="step3" label="分离多边形">
+    - 通过队列解析每一步操作，对曲线 (二次/三次贝塞尔曲线) 进行计算，存储入 ```MultiPolygon``` 对象
+  </TabItem>
+  <TabItem value="step4" label="三角剖分 (Earcut)">
+    - 使用 [Earcut4j](https://github.com/earcut4j/earcut4j) 实现
+  </TabItem>
+  <TabItem value="step5" label="写入 vtxf 文件">
+    - 将所有剖分后的三角形顶点坐标和索引写入文件
+  </TabItem>
+</Tabs>
+
+## 文件结构
+:::info
+文件内所有数据结构都以大端序写入
+:::
+:::info
+vxtf 使用 Deflater 压缩，Inflater 解压缩
+:::
+### 文件头
+内容     | 类型 | 说明
+:--------: | :-----: | :-----:
+数据 ```VTXF``` | String (UTF) | 通过 ```DataInputStream / DataOutputStream``` 的 ```readUTF() / writeUTF()``` 函数读取或写入
+数据 ```0x0307``` | short | -
+字体版本 | byte | 目前只有 ```v0``` 版本
+### 字体主部分
+内容     | 类型 | 说明
+:--------: | :-----: | :-----:
+字符数量 | int | - 
+#### 单个字符 <br/>
+内容     | 类型 | 说明
+:--------: | :-----: | :-----:
+字符码位 | int | - 
+字符长宽比 | float | -
+顶点列表长度 | int | -
+顶点列表 | vec2 (2 * float) | 由列表长度决定
+三角形顶点索引列表长度 | int | 必须为 3 的倍数
+三角形顶点索引列表 | int | 由列表长度决定
+### 文件尾
+内容     | 类型 | 说明
+:--------: | :-----: | :-----:
+Magic number | long | 为 ```0x20230426``` 乘以字符数量

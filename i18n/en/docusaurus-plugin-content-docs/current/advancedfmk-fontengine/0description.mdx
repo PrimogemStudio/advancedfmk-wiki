@@ -1,0 +1,67 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Link from '@docusaurus/Link';
+import Translate, {translate} from '@docusaurus/Translate';
+
+# Vector font processing
+:::info
+
+The font parsing part is done using lwjgl-freetype<br/>
+There is no need for additional dependencies, the Advanced Framework already has a static dependency on lwjgl-freetype<br/>
+This static dependency will be removed in Minecraft 1.21.x<br/>
+
+:::
+[Implementation](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/fontengine/src/main/java/com/primogemstudio/advancedfmk/ftwrap)
+## From ```ttf``` to ```vtxf```
+
+<Tabs>
+  <TabItem value="step1" label="Parse font" default>
+    - Init FreeType library
+    - Load ttf font from file or memory
+    - Store the pointer of the font
+  </TabItem>
+  <TabItem value="step2" label="Fetch SVG path">
+    - Extract glyph outline by ```FT_Decompose_Outline()``` function
+    - Place each SVG component in the queue
+  </TabItem>
+  <TabItem value="step3" label="Split polygons">
+    - The curves (quadratic/cubic bezier curves) are computed and stored in ```MultiPolygon``` objects by queue parsing each step
+  </TabItem>
+  <TabItem value="step4" label="Trigulation (Earcut)">
+    - Use the implementation [Earcut4j](https://github.com/earcut4j/earcut4j)
+  </TabItem>
+  <TabItem value="step5" label="Write into vtxf file">
+    - Write all the split triangle vertex coordinates and indexes to the file
+  </TabItem>
+</Tabs>
+
+## File structure
+:::info
+All data structures within the file are written in big-endian order
+:::
+:::info
+vxtf is compressed by Deflater, uncompressed my Inflater
+:::
+### File header
+Content     | Type | Description
+:--------: | :-----: | :-----:
+Data ```VTXF``` | String (UTF) | Read or write with ```readUTF() / writeUTF()``` in ```DataInputStream / DataOutputStream```
+Data ```0x0307``` | short | -
+Font version | byte | ```v0``` version only
+### Main part
+Content     | Type | Description
+:--------: | :-----: | :-----:
+Number of characters | int | - 
+#### Single character <br/>
+Content     | Type | Description
+:--------: | :-----: | :-----:
+Code point | int | - 
+Aspect ratio | float | -
+Vertices list size | int | -
+Vertices list | vec2 (2 * float) | Determined by the length of the list
+Triangle vertex index list size | int | Must be a multiple of 3
+Triangle vertex index list | int | Determined by the length of the list
+### File end
+Content     | Type | Description
+:--------: | :-----: | :-----:
+Magic number | long | Multiply ```0x20230426``` by the number of characters
