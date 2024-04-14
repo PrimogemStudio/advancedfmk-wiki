@@ -10,12 +10,13 @@ Import **Advanced Framework** in your Fabric project
 
 Since all the submodules of Advanced Framework have already been uploaded to the Maven Central repository, there is no need to configure additional repositories
 ```groovy title="build.gradle"
-ext.advancedfmk_version = '0.4.0'
+ext.advancedfmk_version = '0.4.1'
 
 dependencies {
   // ...
   modImplementation 'io.primogemstudio.advancedfmk:advancedfmk-uicompositor:$advancedfmk_version'
   modImplementation 'io.primogemstudio.advancedfmk:advancedfmk-mmdrenderer:$advancedfmk_version'
+  modImplementation 'io.primogemstudio.advancedfmk:advancedfmk-fontengine:$advancedfmk_version'
   // ...
 }
 ```
