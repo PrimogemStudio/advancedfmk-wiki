@@ -23,7 +23,7 @@ dependencies {
 
 ### Dependencies
 
-- JDK 17
+- JDK 17 +
 - On Linux :
   - [advancedfmk-mmdrenderer (MMD Renderer)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/mmdrenderer) modules need glibc 3.4.31 or above (Debian  distributions may not contains this version of glibc, needs manual upgrade)
 
