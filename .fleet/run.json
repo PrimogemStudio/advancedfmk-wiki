@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "command",
+            "name": "Webside local",
+            "program": "yarn",
+            "args": ["start"],
+        }
+    ]
+}
