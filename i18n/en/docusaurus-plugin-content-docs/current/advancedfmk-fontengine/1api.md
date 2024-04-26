@@ -44,3 +44,22 @@ public class FontEngineToturialMixin {
     }
 }
 ```
+
+Or directly use the ```BufferManager``` wrapper
+
+```java title="FontEngineToturialMixin"
+@Mixin(TitleScreen.class)
+public class TitleScreenFontEngineMixin {
+    @Unique
+    private static final ComposedFont font = new ComposedFont();
+
+    @Inject(at = @At("RETURN"), method = "render")
+    public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
+        BufferManager.INSTANCE.updateBufferColor(0xffffffff); // 设置缓冲区颜色，防止颜色混合
+        BufferManager.INSTANCE.renderText((vertexConsumer, poseStack) -> {
+            font.drawWrapText(vertexConsumer, poseStack, "测试abcd？?!", 200, 200, 9, 25, 0xffffffff);
+            return null;
+        }, graphics, partialTick);
+    }
+}
+```
