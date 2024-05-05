@@ -17,6 +17,7 @@ dependencies {
   modImplementation 'io.primogemstudio.advancedfmk:advancedfmk-uicompositor:$advancedfmk_version'
   modImplementation 'io.primogemstudio.advancedfmk:advancedfmk-mmdrenderer:$advancedfmk_version'
   modImplementation 'io.primogemstudio.advancedfmk:advancedfmk-fontengine:$advancedfmk_version'
+  modImplementation 'io.primogemstudio.advancedfmk:advancedfmk-simulator:$advancedfmk_version'
   // ...
 }
 ```
@@ -31,4 +32,5 @@ dependencies {
 - [advancedfmk-uicompositor (UI Compositor)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/uicompositor)
 - [advancedfmk-mmdrenderer (MMD Renderer)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/mmdrenderer)
 - [advancedfmk-commonutils (Utilities, currently contains lwjgl-tinyfd wrapping functions)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/commonutils)
-- [advancedfmk-fontengine (Font parser & renderer, early access)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/fontengine)
+- [advancedfmk-fontengine (Font parser & renderer, already bound to uicompositor)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/fontengine)
+- [advancedfmk-simulator (Implementation of some math models)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/simulator)
