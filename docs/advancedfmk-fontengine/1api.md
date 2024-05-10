@@ -2,7 +2,7 @@
 ## 字体引擎示例
 - 可在 [Github](https://github.com/PrimogemStudio/Advanced-Framework/blob/main/src/main/java/com/primogemstudio/advancedfmk/mixin/TitleScreenFontEngineMixin.java) 找到示例
 ## 使用 (内置字体)
-新建一个 Mixin 类  (下列代码使用官方反混淆表编写)
+新建一个 Mixin 类  (下列代码使用「官方反混淆表」编写)
 ```java title="FontEngineToturialMixin.java"
 @Mixin(TitleScreen.class) // 注入的位置，可以是任意一个 Screen 类
 public class FontEngineToturialMixin {
