@@ -9,7 +9,7 @@
     "message": "一个全新的项目"
   },
   "home.features.project.textline": {
-    "message": "笑死, 这里还有一个新项目"
+    "message": "「笑死, 这里还有一个新项目」"
   },
   "home.features.project.desc": {
     "message": "Advanced Framework 起始于 2023 年 12 月 7 日, 在 2024 年 1 月 7 日从 Advanced UI 更名 Advanced Framework, 主要灵感来自于在 2023 年 8 月 9 日停更的 Genshin UI"
@@ -18,7 +18,7 @@
     "message": "模块化"
   },
   "home.features.modular.textline": {
-    "message": "模块, 就是用来打碎的！"
+    "message": "「模块, 就是用来打碎的！」"
   },
   "home.features.modular.desc": {
     "message": "为了分离带有原生库的 MMD 渲染器, 整个 Mod 被设计成多模块, 可以独立加载或嵌入到其他 Mod 的内部"
@@ -27,7 +27,7 @@
     "message": "新 MMD 渲染器实现"
   },
   "home.features.mmdrenderer.textline": {
-    "message": "渲染器更新了, 快来测"
+    "message": "「渲染器更新了, 快来测」"
   },
   "home.features.mmdrenderer.mmdbase": {
     "message": "mmdbase (基于 JVM)"
