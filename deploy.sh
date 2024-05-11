@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export CUR=$(pwd)
 git add .
 vim temp.log
 git commit -F "temp.log"
@@ -13,5 +14,8 @@ yarn build
 cp -r ./build/* /tmp/advwi_dep
 cd /tmp/advwi_dep
 git add .
-git commit -m "Script deploy -- build from $COMMIT_ID"
+git commit -m "Script deploy -- build from $COMMIT_I0D"
 git push
+
+cd "$CUR"
+yarn serve
