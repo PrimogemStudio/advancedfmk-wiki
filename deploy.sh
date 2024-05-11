@@ -14,7 +14,7 @@ yarn build
 cp -r ./build/* /tmp/advwi_dep
 cd /tmp/advwi_dep
 git add .
-git commit -m "Script deploy -- build from $COMMIT_I0D"
+git commit -m "Script deploy -- build from $COMMIT_ID"
 git push
 
 cd "$CUR"
