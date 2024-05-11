@@ -1,5 +1,11 @@
 #!/bin/bash
 
+git add .
+vim temp.log
+git commit -F "temp.log"
+git push
+rm temp.log
+
 export COMMIT_ID=$(git rev-parse HEAD)
 rm -rf /tmp/advwi_dep
 git clone -b gh-pages https://github.com/PrimogemStudio/advancedfmk-wiki /tmp/advwi_dep
