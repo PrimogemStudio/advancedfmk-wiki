@@ -42,6 +42,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          editUrl: 'https://github.com/PrimogemStudio/advancedfmk-wiki/blob/main'
         },
         blog: {
           showReadingTime: true,
