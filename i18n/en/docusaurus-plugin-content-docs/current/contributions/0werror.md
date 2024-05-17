@@ -4,3 +4,4 @@ Any compile-time warnings in the code are marked as errors<br/>
 
 Such as unnecessary null assertion in Kotlin
 ![示例横幅](./Werror_mode_1.png)
+This will cause the PR to not be merged

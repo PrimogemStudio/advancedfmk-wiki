@@ -4,3 +4,4 @@
 
 例如在 Kotlin 中的无意义 null 断言
 ![meaningless_null_assertion](./Werror_mode_1.png)
+出现报错会使 PR 无法被合并

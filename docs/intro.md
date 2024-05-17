@@ -33,4 +33,5 @@ dependencies {
 - [advancedfmk-mmdrenderer (MMD 渲染器)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/mmdrenderer)
 - [advancedfmk-commonutils (工具包, 包含对 lwjgl 的封装)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/commonutils)
 - [advancedfmk-fontengine (字体解析 & 渲染器, 已接入 UI 框架)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/fontengine)
-- [advancedfmk-simulator (一些数学模型的实现)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/simulator)
+- [advancedfmk-simulator (「回合制」数学模型的实现)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/simulator)
+- [advancedfmk-binfiles (二进制文件写入和读取实现)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/binfiles)

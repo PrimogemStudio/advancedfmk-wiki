@@ -33,4 +33,5 @@ dependencies {
 - [advancedfmk-mmdrenderer (MMD Renderer)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/mmdrenderer)
 - [advancedfmk-commonutils (Utilities, currently contains lwjgl-tinyfd wrapping functions)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/commonutils)
 - [advancedfmk-fontengine (Font parser & renderer, already bound to uicompositor)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/fontengine)
-- [advancedfmk-simulator (Implementation of some math models)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/simulator)
+- [advancedfmk-simulator (Implementation of round trip math models)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/simulator)
+- [advancedfmk-binfiles (Implementation for reading & writing binary files)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/binfiles)
