@@ -10,7 +10,7 @@ rm temp.log
 export COMMIT_ID=$(git rev-parse HEAD)
 rm -rf /tmp/advwi_dep
 git clone -b gh-pages https://github.com/PrimogemStudio/advancedfmk-wiki /tmp/advwi_dep &
-yarn build &
+npm run build &
 wait
 cp -r ./build/* /tmp/advwi_dep
 cd /tmp/advwi_dep
