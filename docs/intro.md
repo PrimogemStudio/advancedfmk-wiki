@@ -24,7 +24,7 @@ dependencies {
 
 ### 依赖需求
 
-- JDK 17 +
+- JDK 21 +
 - 在 Linux 上: 
   - [advancedfmk-mmdrenderer (MMD 渲染器)](https://github.com/PrimogemStudio/Advanced-Framework/tree/main/mmdrenderer) 模块需要 glibc 3.4.31 或以上版本 (Debian 系发行版可能不包含此 glibc 版本, 需要手动升级)
 
