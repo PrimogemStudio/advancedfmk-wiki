@@ -19,4 +19,3 @@ git commit -m "Script deploy -- build from $COMMIT_ID"
 git push
 
 cd "$CUR"
-yarn serve
