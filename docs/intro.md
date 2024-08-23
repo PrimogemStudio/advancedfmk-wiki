@@ -10,12 +10,12 @@ sidebar_position: 1
 
 由于 Advanced Framework 的所有子模块都已经上传 Maven 中央仓库, 所以无需额外配置仓库
 ```groovy title="build.gradle"
-ext.advancedfmk_version = '1.0.3'
+ext.advancedfmk_version = '1.1.0'
 
 dependencies {
   // ...
   modImplementation 'io.primogemstudio.advancedfmk:advancedfmk-uicompositor:$advancedfmk_version'
-  modImplementation 'io.primogemstudio.advancedfmk:advancedfmk-mmdrenderer:$advancedfmk_version'
+  modImplementation 'io.primogemstudio.advancedfmk:advancedfmk-animerenderer:$advancedfmk_version'
   modImplementation 'io.primogemstudio.advancedfmk:advancedfmk-fontengine:$advancedfmk_version'
   modImplementation 'io.primogemstudio.advancedfmk:advancedfmk-simulator:$advancedfmk_version'
   // ...
