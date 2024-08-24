@@ -46,7 +46,7 @@ public class FontEngineToturialMixin {
 ```
 
 或者直接使用 ```BufferManager``` 包装
-```java title="FontEngineToturialMixin"
+```kotlin title="FontEngineToturialMixin.java"
 @Mixin(TitleScreen.class)
 public class TitleScreenFontEngineMixin {
     @Unique
