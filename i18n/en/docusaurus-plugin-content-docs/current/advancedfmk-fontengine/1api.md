@@ -3,7 +3,7 @@
 - Example can be found on [Github](https://github.com/PrimogemStudio/Advanced-Framework/blob/main/src/main/java/com/primogemstudio/advancedfmk/mixin/TitleScreenFontEngineMixin.java)
 ## Use (Internal font)
 Create a mixin class  (The following code is written using the official mappings)
-```java title="FontEngineToturialMixin.java"
+```kotlin title="FontEngineToturialMixin.java"
 @Mixin(TitleScreen.class) // The location of the injection, which can be any Screen class
 public class FontEngineToturialMixin {
     // Font render buffer, which is used to stage render results

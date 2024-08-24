@@ -3,7 +3,7 @@
 - 可在 [Github](https://github.com/PrimogemStudio/Advanced-Framework/blob/main/src/main/java/com/primogemstudio/advancedfmk/mixin/TestMixin.java) 找到示例
 ## 使用
 编写一个注入 GameRenderer 的 mixin (下列代码使用「官方反混淆表」编写)
-```java title="GameRendererMixin"
+```kotlin title="GameRendererMixin.java"
 @Mixin(GameRenderer.class)
 public class GameRendererMixin {
     // 如果你的模型位于 xxx/yyy/zzz.model3.json, 传入的参数必须是 zzz, xxx/yyy/
